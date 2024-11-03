@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneClick DialSync Bénin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-sync"></i> OneClick DialSync Bénin</h1>
+            <p class="tagline">Mettez à jour vos contacts béninois en un clic !</p>
+        </header>
+
+        <main>
+
+<!-- <section class="steps-section">
+    <h2 class="center">Comment ça marche ?</h2>
+    <div class="steps-container">
+        <div class="step">
+            <div class="step-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Étape 1</h3>
+            <div class="step-details">
+                <p class="step-main">Ouvrez l'application Contacts de votre téléphone</p>
+                <div class="step-substeps">
+                    <p>• Allez dans les paramètres de l'application</p>
+                    <p>• Cherchez l'option "Exporter les contacts"</p>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-icon"><i class="fas fa-file-export"></i></div>
+            <h3>Étape 2</h3>
+            <div class="step-details">
+                <p class="step-main">Exportez vos contacts</p>
+                <div class="step-substeps">
+                    <p>• Sélectionnez l'option pour exporter vos contacts</p>
+                    <p>• Choisissez le format <strong>VCF</strong></p>
+                    <p>• Enregistrez le fichier sur votre appareil</p>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-icon"><i class="fas fa-upload"></i></div>
+            <h3>Étape 3</h3>
+            <div class="step-details">
+                <p class="step-main">Téléversez votre fichier VCF</p>
+                <div class="step-substeps">
+                    <p>• Glissez votre fichier VCF sur cette page</p>
+                    <p>• Ou cliquez pour sélectionner le fichier</p>
+                    <p>• Attendez la fin du traitement</p>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-icon"><i class="fas fa-file-import"></i></div>
+            <h3>Étape 4</h3>
+            <div class="step-details">
+                <p class="step-main">Importez les contacts mis à jour</p>
+                <div class="step-substeps">
+                    <p>• Téléchargez le fichier traité</p>
+                    <p>• Ouvrez-le avec votre application Contacts</p>
+                    <p>• Confirmez l'importation des contacts</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-demo">
+        <a href="https://votre-lien-video.com" target="_blank" class="demo-link">
+            <i class="fas fa-play-circle"></i> Regarder la vidéo démonstrative
+        </a>
+    </div>
+</section> -->
+
+
+<section class="steps-section">
+    <h2 class="center">Comment ça marche ?</h2>
+    <div class="steps-container">
+        <div class="step">
+            <div class="step-icon"><i class="fas fa-file-export"></i></div>
+            <h3>Étape 1</h3>
+            <p>Exportez vos contacts depuis votre téléphone au format VCF</p>
+        </div>
+        <div class="step">
+            <div class="step-icon"><i class="fas fa-upload"></i></div>
+            <h3>Étape 2</h3>
+            <p>Téléversez le fichier sur notre plateforme</p>
+        </div>
+        <div class="step">
+            <div class="step-icon"><i class="fas fa-magic"></i></div>
+            <h3>Étape 3</h3>
+            <p>Laissez la magie opérer</p>
+        </div>
+        <div class="step">
+            <div class="step-icon"><i class="fas fa-download"></i></div>
+            <h3>Étape 4</h3>
+            <p>Téléchargez et importez vos contacts mis à jour</p>
+        </div>
+    </div>
+        <div class="video-demo">
+<a href="https://votre-lien-video.com" target="_blank" class="demo-link">
+<i class="fas fa-play-circle"></i> Regarder la vidéo démonstrative
+</a>
+</div>
+</section> 
+
+
+            <section class="upload-section">
+                <div class="upload-container">
+                    <div class="upload-area" id="dropZone">
+                        <i class="fas fa-file-upload"></i>
+                        <h3>Glissez votre fichier VCF ici</h3>
+                        <p>ou</p>
+                        <label for="fileInput" class="upload-btn">
+                            Sélectionner un fichier
+                            <input type="file" id="fileInput" accept=".vcf" hidden>
+                        </label>
+                        <p class="file-info">Format accepté: .vcf</p>
+                    </div>
+                </div>
+            </section>
+
+             <!-- <section class="steps-section">
+                <h2 class="center">Comment ça marche ?</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-file-export"></i></div>
+                        <h3>Étape 1</h3>
+                        <p>Exportez vos contacts depuis votre téléphone au format VCF</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-upload"></i></div>
+                        <h3>Étape 2</h3>
+                        <p>Téléversez le fichier sur notre plateforme</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-magic"></i></div>
+                        <h3>Étape 3</h3>
+                        <p>Laissez la magie opérer</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-download"></i></div>
+                        <h3>Étape 4</h3>
+                        <p>Téléchargez et importez vos contacts mis à jour</p>
+                    </div>
+                </div>
+                    <div class="video-demo">
+        <a href="https://votre-lien-video.com" target="_blank" class="demo-link">
+            <i class="fas fa-play-circle"></i> Regarder la vidéo démonstrative
+        </a>
+    </div>
+            </section>  -->
+
+            <section class="result-section" style="display: none;">
+                <div class="result-container">
+                    <h2 class="center">Résultats</h2>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <i class="fas fa-phone"></i>
+                            <span id="totalContacts">0</span>
+                            <p>Contacts traités</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span id="updatedContacts">0</span>
+                            <p>Numéros mis à jour</p>
+                        </div>
+                    </div>
+                    <button id="downloadBtn" class="download-btn">
+                        <i class="fas fa-download"></i> Télécharger les contacts mis à jour
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <section class="contact-section">
+            <h2>Besoin d'aide ?</h2>
+            <div class="contact-container">
+                <a href="https://wa.me/votre_numero" class="contact-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="mailto:votre@email.com" class="contact-btn email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://linkedin.com/in/votre-profil" class="contact-btn linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </section>
+
+
+        <section class="faq-section">
+    <h2>Questions Fréquentes & Informations Importantes</h2>
+    
+    <div class="faq-container">
+        <!-- Impact et Importance -->
+        <div class="faq-category">
+            <h3><i class="fas fa-info-circle"></i> Pourquoi cette mise à jour ?</h3>
+            <div class="faq-item">
+                <p class="faq-content">
+                    Suite à la décision de l'ARCEP Bénin, tous les numéros mobiles doivent passer au format 10 chiffres. 
+                    Cette mise à jour est obligatoire pour continuer à utiliser les services de télécommunication au Bénin.
+                </p>
+            </div>
+        </div>
+
+        <!-- Avantages -->
+        <div class="faq-category">
+            <h3><i class="fas fa-check-circle"></i> Avantages de la mise à jour</h3>
+            <div class="faq-item">
+                <ul class="faq-list">
+                    <li>Continuité des services de télécommunication</li>
+                    <li>Mise en conformité avec la réglementation</li>
+                    <li>Évite les problèmes d'appels et de messages</li>
+                    <li>Gain de temps par rapport à une mise à jour manuelle</li>
+                    <li>Réduction des risques d'erreurs de numérotation</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Précautions -->
+        <div class="faq-category">
+            <h3><i class="fas fa-shield-alt"></i> Mesures de précaution</h3>
+            <div class="faq-item">
+                <ul class="faq-list">
+                    <li>Sauvegardez vos contacts avant d'utiliser l'outil</li>
+                    <li>Vérifiez quelques numéros après la mise à jour</li>
+                    <li>Gardez une copie de vos contacts originaux</li>
+                    <li>En cas de doute, contactez-nous pour assistance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Risques -->
+        <div class="faq-category">
+            <h3><i class="fas fa-exclamation-triangle"></i> Points d'attention</h3>
+            <div class="faq-item">
+                <ul class="faq-list warning">
+                    <li>Les numéros non béninois ne seront pas modifiés</li>
+                    <li>Les numéros déjà au format 10 chiffres resteront inchangés</li>
+                    <li>Certaines applications peuvent nécessiter une réinitialisation après la mise à jour</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="faq-category">
+            <h3><i class="fas fa-gavel"></i> Mentions légales</h3>
+            <div class="faq-item disclaimer">
+                <p>Cet outil est fourni gratuitement pour faciliter la transition vers le nouveau format de numérotation au Bénin. 
+                   Bien que nous nous efforcions d'assurer la plus haute qualité de service :</p>
+                <ul class="faq-list">
+                    <li>Nous ne stockons aucune donnée de contact</li>
+                    <li>Le traitement est effectué localement sur votre appareil</li>
+                    <li>Nous vous recommandons de vérifier les numéros importants après la mise à jour</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bon à savoir -->
+        <div class="faq-category">
+            <h3><i class="fas fa-lightbulb"></i> Bon à savoir</h3>
+            <div class="faq-item">
+                <ul class="faq-list tips">
+                    <li>L'outil fonctionne hors ligne une fois chargé</li>
+                    <li>Vous pouvez traiter plusieurs fichiers VCF successivement</li>
+                    <li>La mise à jour est instantanée pour la plupart des contacts</li>
+                    <li>Compatible avec tous les systèmes d'exploitation mobiles</li>
+                    <li>Service gratuit et sans inscription</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <footer>
+            <p>Développé avec ❤️ pour le Bénin par <a href="https://www.linkedin.com/in/collins-haya-788a5a232/" target="_blank">Collins HAYA</a></p>
+        </footer>
+    </div>
+
+    <!-- Modal pour les notifications -->
+    <div id="notificationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
